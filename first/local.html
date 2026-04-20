@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalLink - Discover Local Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo-area">
+        <a href="local.html" class="logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          LocalLink
+        </a>
+        <div class="location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          San Francisco, CA
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </div>
+      
+      <div class="search-bar">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="Search for local services or shops">
+      </div>
+
+      <nav class="nav-links">
+        <a href="local.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          Home
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          Search
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          Activity
+        </a>
+        <a href="dash.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profile
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="categories-section">
+      <div class="categories-header">
+        <h2 class="text-xl">Categories</h2>
+        <a href="#" class="text-primary text-sm font-semibold">View All</a>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          </div>
+          <span>Grocery</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0z"></path><path d="M5 12h14"></path></svg>
+          </div>
+          <span>Bakery</span>
+        </div>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <span>Handmade</span>
+        </a>
+        <div class="category-card">
+          <div class="category-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <span>Repairs</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon" style="background-color: var(--bg-color); color: var(--gray-light);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </div>
+          <span>Services</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="categories-header">
+        <h2 class="text-xl">Featured Nearby</h2>
+        <div class="text-sm font-medium text-gray">
+          Sort by: <span class="text-primary cursor-pointer">Distance <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+        </div>
+      </div>
+
+      <div class="places-grid">
+        <!-- Card 1 -->
+        <div class="place-card">
+          <div class="place-image">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop" alt="Bakery">
+            <div class="place-badges-top badge badge-rating">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" color="var(--star)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              4.8
+            </div>
+            <div class="place-badges-bottom badge badge-featured">FEATURED</div>
+          </div>
+          <div class="place-content">
+            <div class="place-title-row">
+              <h3 class="place-title">Joe's Bakery</h3>
+              <div class="place-distance">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                0.5 miles
+              </div>
+            </div>
+            <p class="place-desc">Fresh artisanal breads & pastries</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="place-card">
+          <div class="place-image">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&h=400&fit=crop" alt="Produce">
+            <div class="place-badges-top badge badge-rating">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" color="var(--star)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              4.5
+            </div>
+          </div>
+          <div class="place-content">
+            <div class="place-title-row">
+              <h3 class="place-title">Green Grocer</h3>
+              <div class="place-distance">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                1.2 miles
+              </div>
+            </div>
+            <p class="place-desc">Organic vegetables & local produce</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="place-card">
+          <div class="place-image">
+            <img src="https://images.unsplash.com/photo-1556228578-8d89b6140337?w=600&h=400&fit=crop" alt="Textiles">
+            <div class="place-badges-top badge badge-rating">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" color="var(--star)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              4.9
+            </div>
+          </div>
+          <div class="place-content">
+            <div class="place-title-row">
+              <h3 class="place-title">Stitch & Fix</h3>
+              <div class="place-distance">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                0.8 miles
+              </div>
+            </div>
+            <p class="place-desc">Professional tailoring & repair services</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

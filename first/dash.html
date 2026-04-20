@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Dashboard - LocalLink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body style="background-color: var(--bg-color);">
+
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="local.html" class="logo text-xl">
+          <div class="logo-icon">
+             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          </div>
+          LocalLink
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Dashboard
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z"></path></svg>
+          Messages
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          Insights
+        </a>
+        <a href="shop.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path></svg>
+          Shop Profile
+        </a>
+      </nav>
+      
+      <div style="margin-top: auto;">
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          Logout
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+      
+      <header class="dashboard-header">
+        <div class="user-profile-header">
+          <div class="user-avatar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h1 class="text-2xl">Welcome back, Joe!</h1>
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </button>
+          <button class="btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="text-sm text-gray" style="text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Quick Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-title">Views</div>
+            <div class="stat-value">1,240</div>
+            <div class="stat-change"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> 12%</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-title">Messages</div>
+            <div class="stat-value">12</div>
+            <div class="stat-change"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> 5%</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-title">Followers</div>
+            <div class="stat-value">856</div>
+            <div class="stat-change"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> 8%</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="dashboard-grid">
+        <!-- Manage Profile -->
+        <section>
+          <h2 class="text-sm text-gray" style="text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Manage Profile</h2>
+          
+          <div class="manage-list">
+            <div class="manage-card">
+              <div class="manage-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+              </div>
+              <div class="manage-info">
+                <h4 class="text-md font-semibold text-dark">Edit Info</h4>
+                <p>Profile & Contact</p>
+              </div>
+            </div>
+
+            <div class="manage-card">
+              <div class="manage-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </div>
+              <div class="manage-info">
+                <h4 class="text-md font-semibold text-dark">Add Products</h4>
+                <p>New items or services</p>
+              </div>
+            </div>
+
+            <div class="manage-card">
+              <div class="manage-icon" style="background-color: #f3f4f6; color: var(--dark);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="manage-info">
+                <h4 class="text-md font-semibold text-dark">Update Hours</h4>
+                <p>Open & closing times</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Boost Visibility & Recent Activity -->
+        <section style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <div class="promo-card">
+            <h3>Boost Your Visibility</h3>
+            <p>Create a special offer to attract more local customers today.</p>
+            <button class="btn btn-primary" style="z-index: 1;">Create a Special Offer</button>
+          </div>
+          
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+               <h2 class="text-sm text-gray" style="text-transform: uppercase; letter-spacing: 0.1em;">Recent Activity</h2>
+               <a href="#" class="text-primary text-sm font-semibold">View All</a>
+            </div>
+            
+            <div class="activity-list">
+              <!-- Item 1 -->
+              <div class="activity-item">
+                <img src="https://i.pravatar.cc/150?img=47" alt="Sarah M." class="activity-avatar">
+                <div class="activity-content">
+                  <div class="activity-desc"><strong>Sarah M.</strong> followed your shop</div>
+                  <div class="activity-time">2 hours ago</div>
+                </div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="activity-item">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Alex Johnson" class="activity-avatar">
+                <div class="activity-content">
+                  <div class="activity-desc"><strong>Alex Johnson</strong> left a 5-star review</div>
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-time">5 hours ago</div>
+                </div>
+              </div>
+              
+              <div class="activity-item">
+                <div class="activity-avatar stock-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <div class="activity-content">
+                  <div class="activity-desc">Product 'Handmade Mug' is out of stock</div>
+                  <div class="activity-time">Yesterday</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
