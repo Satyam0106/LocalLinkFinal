@@ -1,4 +1,4 @@
-const rawBase = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const rawBase = import.meta.env.VITE_API_URL || "https://locallinkfinal.onrender.com";
 const API_URL = String(rawBase).trim().replace(/\/+$/, "");
 
 export async function apiFetch(path, { token, method, body } = {}) {
