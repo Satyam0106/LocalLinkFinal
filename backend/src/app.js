@@ -18,10 +18,12 @@ export function createApp() {
 
   // Build the list of allowed origins:
   // CLIENT_ORIGIN env var may be a comma-separated list of URLs.
-  const allowedOrigins = new Set([
-    "https://local-link-final.vercel.app",
-    ...env.clientOrigin.split(",").map((o) => o.trim()).filter(Boolean),
-  ]);
+  const allowedOrigins = new Set(
+    [
+      "https://local-link-final.vercel.app",
+      ...env.clientOrigin.split(",").map((o) => o.trim()).filter(Boolean),
+    ].map((o) => o.replace(/\/+$/, "")) // strip trailing slashes
+  );
 
   app.use(
     cors({
