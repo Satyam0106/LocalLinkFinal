@@ -16,11 +16,21 @@ import { sendError } from "./utils/http.js";
 export function createApp() {
   const app = express();
 
+  // Build the list of allowed origins:
+  // CLIENT_ORIGIN env var may be a comma-separated list of URLs.
+  const allowedOrigins = new Set([
+    "https://local-link-final.vercel.app",
+    ...env.clientOrigin.split(",").map((o) => o.trim()).filter(Boolean),
+  ]);
+
   app.use(
     cors({
       origin(origin, callback) {
+        // Allow server-to-server / curl requests (no Origin header)
         if (!origin) return callback(null, true);
-        if (origin === env.clientOrigin) return callback(null, true);
+        // Allow any explicitly listed origin
+        if (allowedOrigins.has(origin)) return callback(null, true);
+        // Allow all localhost / 127.0.0.1 origins (for local dev)
         if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
           return callback(null, true);
         }

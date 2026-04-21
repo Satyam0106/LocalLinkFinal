@@ -18,7 +18,7 @@ export async function apiFetch(path, { token, method, body } = {}) {
   } catch (e) {
     const hint =
       e instanceof TypeError
-        ? `Cannot reach API at ${API_URL}. Set VITE_API_URL in frontend/.env, restart Vite, and ensure the backend is running on port 4000.`
+        ? `Cannot reach API at ${API_URL}. Is the backend (https://locallinkfinal.onrender.com) running? Check Render logs or set VITE_API_URL in frontend/.env.`
         : e?.message || "Network error";
     const err = new Error(hint);
     err.cause = e;
